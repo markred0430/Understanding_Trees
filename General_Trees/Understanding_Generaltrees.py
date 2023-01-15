@@ -31,7 +31,10 @@ def build_product_tree():
     root = Treenode("Electronics")
 
     laptop = Treenode("Laptop")
-    laptop.add_child(Treenode("Macbook"))
+    macbook = Treenode("Macbook")
+    test = Treenode("Test")
+    macbook.add_child(test)
+    laptop.add_child(macbook)
     laptop.add_child(Treenode("Ms Surface"))
     laptop.add_child(Treenode("Think"))
 
